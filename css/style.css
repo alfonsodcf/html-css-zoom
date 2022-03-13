@@ -4,9 +4,79 @@
     box-sizing: border-box;
 }
 
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 80px;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.float-right {
+    float: right;
+    
+}
+
 header{
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
     height: 100px;
     width: 100%;
     background-color: black;
     
+}
+
+.container{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: blue;
+}
+
+p{
+    color: white
+}
+
+header p{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 77);
+
+}
+
+main div{
+    position: relative;
+    height: 200px;
+    width: 280px;
+    padding: 5px 3px;
+
+}
+
+main div p{
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 7px;
+}
+main div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav{
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
 }
