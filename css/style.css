@@ -7,7 +7,7 @@
 .container-flex{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 80px;
+    
 }
 
 .clearfix::after {
@@ -34,7 +34,8 @@ header{
 .container{
     height: calc(100vh - 100px);
     width: 100%;
-    background-color: blue;
+    background-color: black;
+
 }
 
 p{
@@ -51,16 +52,24 @@ header p{
     background-color: rgb(77, 77, 77);
 
 }
+main{
+    background-color: black;
+    padding: 0 80px;
 
-main div{
+}
+.container-membri{
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.container-membri div{
     position: relative;
     height: 200px;
-    width: 280px;
+    width: 300px;
     padding: 5px 3px;
 
 }
 
-main div p{
+.container-membri div p{
     position: absolute;
     bottom: 0;
     font-size: 20px;
@@ -68,15 +77,36 @@ main div p{
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 7px;
 }
-main div img{
+.container-membri div img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 nav{
     position: fixed;
-    z-index: 1000;
+    bottom: 0;
+    left: 0;
     height: 100px;
     width: 100%;
     background-color: rgb(34, 34, 34);
 }
+
+nav{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav i{
+    color: white;
+    font-size: 35px;
+}
+
+nav div{
+    display: inline-block;
+}
+
+.apri{
+    font-size: 15px;
+    vertical-align: 10px;
+}
+
